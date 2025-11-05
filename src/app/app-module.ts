@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home.component/home.component';
 import { MusicaComponent } from './components/musica.component/musica.component';
 import { MenuComponent } from './components/menu.component/menu.component';
 import { NotfoundComponent } from './components/notfound.component/notfound.component';
+import { NumeroDobleComponent } from './components/numero.doble.component/numero.doble.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NotfoundComponent } from './components/notfound.component/notfound.comp
     MusicaComponent,
     MenuComponent,
     NotfoundComponent,
+    NumeroDobleComponent,
   ],
   imports: [
     BrowserModule,

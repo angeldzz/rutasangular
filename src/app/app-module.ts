@@ -8,6 +8,8 @@ import { MusicaComponent } from './components/musica.component/musica.component'
 import { MenuComponent } from './components/menu.component/menu.component';
 import { NotfoundComponent } from './components/notfound.component/notfound.component';
 import { NumeroDobleComponent } from './components/numero.doble.component/numero.doble.component';
+import { TablamultiplicarroutingComponent } from './components/tablamultiplicarrouting.component/tablamultiplicarrouting.component';
+import { MenutablaComponent } from './components/menutabla.component/menutabla.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NumeroDobleComponent } from './components/numero.doble.component/numero
     MenuComponent,
     NotfoundComponent,
     NumeroDobleComponent,
+    TablamultiplicarroutingComponent,
+    MenutablaComponent,
   ],
   imports: [
     BrowserModule,

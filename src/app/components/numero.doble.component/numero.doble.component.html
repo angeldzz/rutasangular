@@ -5,8 +5,13 @@
             El doble de {{ numero }} es {{ doble }}
         </h2>
     }@else{
+        <button (click)="redirect(44)">Enviar a doble de 44</button>
+        <button (click)="redirect(1)">Enviar a doble de 1</button>
+        <button (click)="redirect(2342)">Enviar a doble de 2342</button>
+        <button (click)="redirect(453)">Enviar a doble de 453</button>
         <h2 style="color: red;">
             No se a recibido ningun parametro
         </h2>
     }
+    <button (click)="goToHome()">Volver a home</button>
 </div>

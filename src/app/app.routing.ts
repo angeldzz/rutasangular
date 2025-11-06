@@ -5,6 +5,7 @@ import { MusicaComponent } from "./components/musica.component/musica.component"
 import { ModuleWithProviders } from "@angular/core";
 import { NotfoundComponent } from "./components/notfound.component/notfound.component";
 import { NumeroDobleComponent } from "./components/numero.doble.component/numero.doble.component";
+import { TablamultiplicarroutingComponent } from "./components/tablamultiplicarrouting.component/tablamultiplicarrouting.component";
 
 const appRoutes:Routes = [
     { path:"", component:HomeComponent},
@@ -12,6 +13,8 @@ const appRoutes:Routes = [
     { path:"musica", component:MusicaComponent},
     { path:"numeroDoble", component:NumeroDobleComponent},
     { path:"numeroDoble/:numero", component:NumeroDobleComponent},
+    { path:"tablaMultiplicar", component:TablamultiplicarroutingComponent},
+    { path:"tablaMultiplicar/:num", component:TablamultiplicarroutingComponent},
     { path:"**", component:NotfoundComponent},
 ]
 export const appRoutingProvider: any[] = [];

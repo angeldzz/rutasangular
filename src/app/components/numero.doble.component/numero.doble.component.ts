@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { ActivatedRoute,Params } from '@angular/router';
+import { ActivatedRoute,Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-numero-doble',
@@ -10,9 +10,15 @@ import { ActivatedRoute,Params } from '@angular/router';
 export class NumeroDobleComponent implements OnInit {
   public doble: number;
   public numero!: number;
-
-  constructor(private _activateRoute: ActivatedRoute){
+  constructor(private _activateRoute: ActivatedRoute, private _router: Router){
     this.doble = 0
+    
+  }
+  redirect(num: number): void{
+    this._router.navigate(["/numeroDoble/",num])
+  }
+  goToHome(){
+    this._router.navigate(['/']);
   }
   ngOnInit(): void {
     // aqui es donde nos suscribimos al parametro

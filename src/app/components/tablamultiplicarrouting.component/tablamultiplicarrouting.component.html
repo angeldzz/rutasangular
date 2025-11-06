@@ -1,0 +1,20 @@
+<div>
+    @if(numero){
+        <table border="3">
+        <thead>
+            <tr>
+                <th>Operacion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let resultado of resultados; let i = index">
+                <td>{{ numero }} * {{ i + 1 }}</td>
+                <td>{{ resultado }}</td>
+            </tr>
+        </tbody>
+    </table>
+    }@else{
+        <app-menutabla></app-menutabla>
+    }
+</div>

@@ -1,3 +1,12 @@
 <div>
     <h1>Numero Doble</h1>
+    @if(numero){
+        <h2 style="color: green;">
+            El doble de {{ numero }} es {{ doble }}
+        </h2>
+    }@else{
+        <h2 style="color: red;">
+            No se a recibido ningun parametro
+        </h2>
+    }
 </div>

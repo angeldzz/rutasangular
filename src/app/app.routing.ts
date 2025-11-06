@@ -11,6 +11,7 @@ const appRoutes:Routes = [
     { path:"cine", component:CineComponent},
     { path:"musica", component:MusicaComponent},
     { path:"numeroDoble", component:NumeroDobleComponent},
+    { path:"numeroDoble/:numero", component:NumeroDobleComponent},
     { path:"**", component:NotfoundComponent},
 ]
 export const appRoutingProvider: any[] = [];
